@@ -256,7 +256,7 @@ th {
 }
 .container{
   width: 100%;
-  max-width: 1356px;
+  max-width: 1370px;
   padding-left: 28px;
   padding-right: 28px;
   margin: 0 auto;
@@ -291,7 +291,7 @@ nav > ul  li  a{
   text-decoration: none;
 }
 .dropdown{
-  /* display:none; */
+  display:none;
   padding:0;
   position: absolute;
   top: 100%;
