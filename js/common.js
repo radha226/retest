@@ -2,7 +2,7 @@
  
 });
 function isOnScreen(){
-  console.log($.fn);
+  // console.log($.fn);
   $.fn.isOnScreen = function(){
     var height = this.outerHeight();
     var width = this.outerWidth();
@@ -41,7 +41,8 @@ function isOnScreen(){
   };
 }
 $(document).ready(function(){
-  console.log('check');
+  // console.log('check');
+  
   isOnScreen();
   $('.firm').each(function () {
     var cur = $(this)
