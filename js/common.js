@@ -44,7 +44,7 @@ $(document).ready(function(){
   $('.mobile-menu a').click(function(e){
     event.preventDefault();
     $(this).parents('header').addClass('active');
-    $(this).parents('header').find('nav').slideToggle();
+    $(this).parents('header.active').find('nav').slideToggle();
   })
   $('.banner').slick({
     infinite: true,
@@ -112,7 +112,7 @@ $(document).ready(function(){
     });
 
     // Page animation
-    $('nav ul li').each(function () {
+    $('nav ul li, .block').each(function () {
       var cur = $(this);
       if (cur.isOnScreen(0.15, 0.15)) {
         if (!cur.hasClass('animated')) {
