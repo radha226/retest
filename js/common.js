@@ -46,6 +46,21 @@ $(document).ready(function(){
     $(this).parents('header').addClass('active');
     $(this).parents('header.active').find('nav').slideToggle();
   })
+  //tabs
+   $('.tab-link a').click(function(event){
+    event.preventDefault();
+    $('.tab-link a').removeClass('active');
+    $(this).addClass('active');
+    $('.tab-content li.active').removeClass('active');
+    $('.tab-content li'+$(this).attr('href')).addClass('active');
+  })
+
+  // accordian
+  $('.accordian-title').click(function(){
+    $(this).parents('.accordian').addClass('active');
+    $('.accordian-content').removeClass('active');
+    $(this).parents('.accordian').find('.accordian-content').addClass('active');
+  })
   $('.banner').slick({
     infinite: true,
     autoplay: true,

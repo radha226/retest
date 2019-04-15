@@ -615,6 +615,53 @@ rating--------------------------------------------*/
   width:100%;
 }
 
+/* ----------------------------------------------
+tabs-----------------------------------------------*/
+.tabbg{
+  background-color: #f6f8fb;
+}
+.tab-link{
+  text-align: center;
+  list-style: none;
+  padding-top: 80px;
+}
+.tab-link li{
+  float: none;
+  width: 11%;
+  display: inline-block;
+}
+.tab-link li a{
+  color: black;
+  text-decoration: none;
+  width: 100%;
+  display: inline-block;
+}
+.tab-link li a.active{
+  background-color: #ffff;
+}
+.tab-content{
+  list-style: none;
+  padding-bottom:90px;
+}
+.tab-content li{
+  display:none
+}
+
+.tab-content li.active{
+  display:block;
+}
+/* accordian ---------------------------------------
+--------------------------------------------------*/
+.accordian-content{
+  display: none;  
+}
+.accordian-title{
+  background:grey;
+  cursor:pointer;   
+}
+.accordian-content.active{
+  display:block;
+}
 /*-------------------------------------------------
 animation--------------------------------------------*/
 .round, .slide-content .robot, nav > ul > li, .slide-content h2, .slide-content h3,.slide-content a, .block{
